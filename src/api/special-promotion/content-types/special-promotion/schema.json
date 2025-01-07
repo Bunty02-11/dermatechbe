@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_promotions",
+  "info": {
+    "singularName": "special-promotion",
+    "pluralName": "special-promotions",
+    "displayName": "Special Promotion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "section": {
+      "type": "json"
+    },
+    "faqs": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "section1Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "section2Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectio3Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concerns",
+  "info": {
+    "singularName": "concern",
+    "pluralName": "concerns",
+    "displayName": "Concern",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "meta_title": {
+      "type": "text"
+    },
+    "meta_description": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "faqs": {
+      "type": "json"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  }
+}
