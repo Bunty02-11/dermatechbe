@@ -18,7 +18,7 @@
       "type": "date"
     },
     "blog_info": {
-      "type": "text"
+      "type": "json"
     }
   }
 }
