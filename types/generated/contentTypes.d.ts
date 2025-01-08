@@ -474,6 +474,7 @@ export interface ApiConcernConcern extends Struct.CollectionTypeSchema {
 export interface ApiContactContact extends Struct.CollectionTypeSchema {
   collectionName: 'contacts';
   info: {
+    description: '';
     displayName: 'contact';
     pluralName: 'contacts';
     singularName: 'contact';
@@ -495,6 +496,7 @@ export interface ApiContactContact extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     message: Schema.Attribute.Text;
     Name: Schema.Attribute.String;
+    Number: Schema.Attribute.String;
     phone: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
