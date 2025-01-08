@@ -440,6 +440,9 @@ export interface ApiConcernConcern extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Banner_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     content: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
@@ -447,6 +450,10 @@ export interface ApiConcernConcern extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     faqs: Schema.Attribute.JSON;
     heading: Schema.Attribute.String;
+    image1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image4: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -540,6 +547,9 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Banner_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     content: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
@@ -547,6 +557,10 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     faqs: Schema.Attribute.JSON;
     heading: Schema.Attribute.String;
+    image1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image4: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -577,6 +591,9 @@ export interface ApiSpecialPromotionSpecialPromotion
     draftAndPublish: true;
   };
   attributes: {
+    Banner_image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
